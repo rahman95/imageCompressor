@@ -8,5 +8,18 @@
     ],
     "require": {
         "tinify/tinify": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "RYounus\\ImageCompression\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RYounus\\ImageCompression\\ImageServiceProvider"
+            ],
+        }
     }
 }
