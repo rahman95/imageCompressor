@@ -1,8 +1,10 @@
 <?php
 
-namespace ryounus\imageCompression;
+namespace RYounus\ImageCompression;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Http\UploadedFile;
+use RYounus\ImageCompression\Controllers\ImageController;
 
 class ImageServiceProvider extends ServiceProvider{
 
@@ -12,6 +14,9 @@ class ImageServiceProvider extends ServiceProvider{
     }
 
     public function register(){
-        //
+        UploadedFile::macro('index', function() {
+            $image = resolve(ImageController::class);
+            return $image->index();
+        });
     }
 }
