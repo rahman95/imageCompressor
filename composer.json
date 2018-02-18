@@ -19,7 +19,7 @@
         "laravel": {
             "providers": [
                 "RYounus\\ImageCompression\\ImageServiceProvider"
-            ],
+            ]
         }
     }
 }
