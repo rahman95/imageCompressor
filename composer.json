@@ -1,0 +1,12 @@
+{
+    "name": "ryounus/image-compression",
+    "authors": [
+        {
+            "name": "Rahman Younus",
+            "email": "rahman_younus@live.co.uk"
+        }
+    ],
+    "require": {
+        "tinify/tinify": "^1.5"
+    }
+}
